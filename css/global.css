@@ -1,0 +1,29 @@
+a {
+	color: #ff6759;
+}
+
+.site-navigation {
+	width: 100%;
+	text-align: center;
+}
+
+.site-navigation a {
+	font-weight: 600;
+	font-size: large;
+	text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #16141F;
+		color: #F5F5F7;
+	}
+
+	a:hover {
+		color: #ff9a91;
+	}
+
+	p {
+		color: #DEDCE4;
+	}
+}
