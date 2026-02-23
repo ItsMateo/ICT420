@@ -4,7 +4,6 @@
 }
 
 .site-navigation a {
-	color: #ff6759;
 	font-weight: 600;
 	font-size: large;
 	text-decoration: none;
@@ -12,6 +11,10 @@
 	&:hover {
 		color: #ff9a91;
 	}
+}
+
+a {	
+	color: #ff6759;
 }
 
 body {
