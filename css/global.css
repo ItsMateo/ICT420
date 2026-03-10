@@ -99,11 +99,11 @@ footer p {
 	font-weight: 600;
 	font-size: 1.125rem;
 	text-decoration: none;
+}
 
-	&:hover {
-		color: #ff9a91;
-		text-decoration: underline;
-	}
+.site-navigation a:hover {
+	color: #ff9a91;
+	text-decoration: underline;
 }
 
 .card {
@@ -114,27 +114,27 @@ footer p {
 	border: 1px solid var(--card-border);
 }
 
-.card-content {
-	padding: 25px;
-	text-align: left;
-
-	h2 {
-		margin-top: 0;
-		text-align: center;
-	}
+.card h2 {
+	margin-top: 0;
+	text-align: center;
 }
 
-.card-content figure {
+.card figure {
 	margin: 0;
 }
 
-.card-content figure figcaption {
+.card figure figcaption {
 	font-size: 0.7rem;
 	line-height: 1.4;
 	color: rgba(222, 220, 228, 0.8);
 }
 
-.card-content img {
+.card img {
 	border-radius: 1rem;
 	width: 398px
+}
+
+.card-content {
+	padding: 25px;
+	text-align: left;
 }
