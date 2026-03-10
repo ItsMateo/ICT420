@@ -56,32 +56,32 @@ main {
 	width: 80%;
 	max-width: 90%;
 	margin: 5rem auto;
+}
 
-	section {
-		margin-bottom: 1.5rem;
+main section {
+	margin-bottom: 1.5rem;
+}
 
-		p {
-			margin: 0.5em 0 1em;
-		}
-	}
+main section p {
+	margin: 0.5em 0 1em;
+}
 
-	ul {
-		line-height: 1.6;
-	}
+main ul {
+	line-height: 1.6;
 }
 
 footer {
 	margin-top: 50px;
 	background-color: var(--card-color);
+}
 
-	p {
-		margin: 0;
-		width: 100%;
-		padding: 1.5em;
-		text-align: center;
-		box-sizing: border-box;
-		border: 1px solid var(--card-border);
-	}
+footer p {
+	margin: 0;
+	width: 100%;
+	padding: 1.5em;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid var(--card-border);
 }
 
 .site-navigation {
@@ -93,16 +93,16 @@ footer {
 	border: 1px solid var(--card-border);
 	border-radius: 100px;
 	text-align: center;
+}
 
-	a {
-		font-weight: 600;
-		font-size: 1.125rem;
-		text-decoration: none;
+.site-navigation a {
+	font-weight: 600;
+	font-size: 1.125rem;
+	text-decoration: none;
 
-		&:hover {
-			color: #ff9a91;
-			text-decoration: underline;
-		}
+	&:hover {
+		color: #ff9a91;
+		text-decoration: underline;
 	}
 }
 
@@ -112,29 +112,29 @@ footer {
 	text-align: center;
 	background-color: var(--card-color);
 	border: 1px solid var(--card-border);
+}
 
-	.card-content {
-		padding: 25px;
-		text-align: left;
+.card .card-content {
+	padding: 25px;
+	text-align: left;
 
-		h2 {
-			margin-top: 0;
-			text-align: center;
-		}
+	h2 {
+		margin-top: 0;
+		text-align: center;
 	}
+}
 
-	figure {
-		margin: 0;
+.card .card-content figure {
+	margin: 0;
+}
 
-		figcaption {
-			font-size: 0.7rem;
-			line-height: 1.4;
-			color: rgba(222, 220, 228, 0.8);
-		}
-	}
+.card .card-content figure figcaption {
+	font-size: 0.7rem;
+	line-height: 1.4;
+	color: rgba(222, 220, 228, 0.8);
+}
 
-	img {
-		border-radius: 1rem;
-		width: 398px
-	}
+.card .card-content img {
+	border-radius: 1rem;
+	width: 398px
 }
