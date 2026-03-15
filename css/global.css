@@ -112,6 +112,20 @@ footer p {
 	text-align: center;
 	background-color: var(--card-color);
 	border: 1px solid var(--card-border);
+
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+
+	&:hover {
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+		transform: translateY(-8px);
+		cursor: pointer;
+	}
+}
+
+.card a {
+	text-decoration: none;
+	text-emphasis: none;
 }
 
 .card h2 {
@@ -137,4 +151,10 @@ footer p {
 .card-content {
 	padding: 25px;
 	text-align: left;
+}
+
+.emphasized-text {
+	background: linear-gradient(135deg, #5ebcff, #5191ff);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
