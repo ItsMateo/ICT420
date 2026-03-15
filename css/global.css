@@ -115,12 +115,6 @@ footer p {
 
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 	transition: all 0.3s ease;
-
-	&:hover {
-		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-		transform: translateY(-8px);
-		cursor: pointer;
-	}
 }
 
 .card a {
@@ -146,6 +140,12 @@ footer p {
 .card img {
 	border-radius: 1rem;
 	width: 398px
+}
+
+.card:hover {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+	transform: translateY(-8px);
+	cursor: pointer;
 }
 
 .card-content {
