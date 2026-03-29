@@ -106,8 +106,22 @@ footer p {
 	text-decoration: underline;
 }
 
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	align-items: stretch;
+}
+
+.projects-list .card {
+	flex: 1 1 calc((100% - 3rem) / 3);
+	min-width: min(100%, 17.5rem);
+	max-width: 100%;
+	margin-bottom: 0;
+	box-sizing: border-box;
+}
+
 .card {
-	width: 400px;
 	border-radius: 1rem;
 	text-align: center;
 	background-color: var(--card-color);
@@ -139,7 +153,10 @@ footer p {
 
 .card img {
 	border-radius: 1rem;
-	width: 398px
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 
 .card:hover {
