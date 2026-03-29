@@ -53,8 +53,7 @@ h3 {
 }
 
 main {
-	width: 80%;
-	max-width: 90%;
+	width: 65%;
 	margin: 5rem auto;
 }
 
@@ -70,6 +69,43 @@ main ul {
 	line-height: 1.6;
 }
 
+header {
+	width: 65%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5rem auto;
+	margin-top: 15px;
+	padding: 25px;
+	background-color: var(--card-color);
+	border: 1px solid var(--card-border);
+	border-radius: 100px;
+}
+
+header .header-title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 0;
+	color: #ff5f4d;
+}
+
+header .site-navigation {
+	display: flex;
+	gap: 1rem;
+}
+
+header .site-navigation a {
+	color: white;
+	font-weight: 600;
+	font-size: 1.125rem;
+	text-decoration: none;
+}
+
+header .site-navigation a:hover {
+	color: #ff9a91;
+	text-decoration: underline;
+}
+
 footer {
 	margin-top: 50px;
 	background-color: var(--card-color);
@@ -82,28 +118,6 @@ footer p {
 	text-align: center;
 	box-sizing: border-box;
 	border: 1px solid var(--card-border);
-}
-
-.site-navigation {
-	width: fit-content;
-	margin: 0 auto;
-	margin-top: 15px;
-	padding: 25px;
-	background-color: var(--card-color);
-	border: 1px solid var(--card-border);
-	border-radius: 100px;
-	text-align: center;
-}
-
-.site-navigation a {
-	font-weight: 600;
-	font-size: 1.125rem;
-	text-decoration: none;
-}
-
-.site-navigation a:hover {
-	color: #ff9a91;
-	text-decoration: underline;
 }
 
 .projects-list {
