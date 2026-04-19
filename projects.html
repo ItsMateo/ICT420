@@ -9,6 +9,162 @@
 
 	<link rel="stylesheet" href="/css/global.css">
 
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "CollectionPage",
+					"@id": "#page",
+					"name": "Projects",
+					"description": "A collection of projects spanning different domains and technologies.",
+					"mainEntity": {
+						"@id": "#projects-list"
+					},
+					"mentions": [
+						{
+							"@id": "#surrealist"
+						},
+						{
+							"@id": "#transago"
+						},
+						{
+							"@id": "#starlane"
+						},
+						{
+							"@id": "#svantle"
+						},
+						{
+							"@id": "#smash-wizards"
+						},
+						{
+							"@id": "#rubicon"
+						}
+					]
+				},
+				{
+					"@type": "ItemList",
+					"@id": "#projects-list",
+					"name": "Project cards",
+					"numberOfItems": 6,
+					"itemListElement": [
+						{
+							"@type": "ListItem",
+							"position": 1,
+							"item": {
+								"@id": "#surrealist"
+							}
+						},
+						{
+							"@type": "ListItem",
+							"position": 2,
+							"item": {
+								"@id": "#transago"
+							}
+						},
+						{
+							"@type": "ListItem",
+							"position": 3,
+							"item": {
+								"@id": "#starlane"
+							}
+						},
+						{
+							"@type": "ListItem",
+							"position": 4,
+							"item": {
+								"@id": "#svantle"
+							}
+						},
+						{
+							"@type": "ListItem",
+							"position": 5,
+							"item": {
+								"@id": "#smash-wizards"
+							}
+						},
+						{
+							"@type": "ListItem",
+							"position": 6,
+							"item": {
+								"@id": "#rubicon"
+							}
+						}
+					]
+				},
+				{
+					"@type": "SoftwareApplication",
+					"@id": "#surrealist",
+					"name": "Surrealist",
+					"url": "https://app.surrealdb.com/overview",
+					"description": "The ultimate IDE for interacting with SurrealDB.",
+					"publisher": {
+						"@type": "Organization",
+						"name": "SurrealDB"
+					}
+				},
+				{
+					"@type": "SoftwareApplication",
+					"@id": "#transago",
+					"name": "Transago",
+					"url": "https://transago.app",
+					"description": "A bill tracking app built on top of SurrealDB for tracking bills and expenses.",
+					"applicationCategory": "FinanceApplication",
+					"keywords": [
+						"SurrealDB",
+						"bill tracking",
+						"expenses"
+					]
+				},
+				{
+					"@type": "CreativeWork",
+					"@id": "#starlane",
+					"name": "Starlane Studios",
+					"url": "https://starlane.studio",
+					"description": "A project co-founded with friends that creates a variety of projects, including games.",
+					"creator": {
+						"@type": "Person",
+						"name": "Matthew McFadden"
+					}
+				},
+				{
+					"@type": "Brand",
+					"@id": "#svantle",
+					"name": "Svantle",
+					"url": "https://svantle.com",
+					"description": "A small brand created to house various projects including Transago and in-development projects like Chronosity.",
+					"brandOwner": {
+						"@type": "Person",
+						"name": "Matthew McFadden"
+					}
+				},
+				{
+					"@type": "CreativeWork",
+					"@id": "#smash-wizards",
+					"name": "Smash Wizards",
+					"url": "https://starlane.studio/projects/",
+					"description": "An enterprise-grade Minecraft server network created with friends.",
+					"keywords": [
+						"Minecraft",
+						"server network"
+					]
+				},
+				{
+					"@type": "SoftwareApplication",
+					"@id": "#rubicon",
+					"name": "Rubicon Platform",
+					"url": "https://starlane.studio/projects/",
+					"description": "An enterprise-grade Minecraft server management platform for professional servers and events.",
+					"applicationCategory": "DeveloperApplication",
+					"producer": {
+						"@type": "Organization",
+						"name": "Starlane Studios"
+					}
+				}
+			]
+		}
+	</script>
+
 	<title>ICT 420 Website - Projects</title>
 </head>
 
@@ -34,7 +190,7 @@
 			</p>
 		</section>
 		<!-- This is semantically appropriate since it is just grouping and has no meaning. The project cards hold meaning so they retain the section tags. -->
-		<div class="projects-list">
+		<div id="projects-list" class="projects-list">
 			<section id="surrealist" class="card">
 				<a href="https://app.surrealdb.com/overview" target="_blank">
 					<figure>

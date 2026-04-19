@@ -9,6 +9,67 @@
 
 	<link rel="stylesheet" href="/css/global.css">
 
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "AboutPage",
+					"@id": "#page",
+					"name": "Home",
+					"description": "Website for ICT 420",
+					"mainEntity": {
+						"@id": "#person"
+					},
+					"about": [
+						{
+							"@id": "#org-surrealdb"
+						},
+						{
+							"@type": "DefinedTerm",
+							"name": "Information Communication Technology"
+						},
+						{
+							"@type": "DefinedTerm",
+							"name": "Artificial Intelligence"
+						}
+					]
+				},
+				{
+					"@type": "Person",
+					"@id": "#person",
+					"name": "Matthew McFadden",
+					"description": "A full-stack web developer and software developer based in Lexington, Kentucky.",
+					"homeLocation": {
+						"@type": "Place",
+						"name": "Lexington, Kentucky"
+					},
+					"worksFor": {
+						"@id": "#org-surrealdb"
+					},
+					"alumniOf": {
+						"@type": "CollegeOrUniversity",
+						"name": "University of Kentucky"
+					},
+					"hasOccupation": {
+						"@type": "Occupation",
+						"name": "Software Engineering Contractor"
+					}
+				},
+				{
+					"@type": "Organization",
+					"@id": "#org-surrealdb",
+					"name": "SurrealDB",
+					"url": "https://surrealdb.com/",
+					"sameAs": [
+						"https://app.surrealdb.com/overview",
+						"https://surrealdb.com/cloud"
+					]
+				}
+			]
+		}
+	</script>
+
 	<title>ICT 420 Website</title>
 </head>
 
